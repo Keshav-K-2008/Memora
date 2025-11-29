@@ -9,7 +9,7 @@ import AddMemory from './pages/AddMemory';
 import ViewMemory from './pages/ViewMemory';
 import AICapsule from './pages/AICapsule'; // Import new page
 
-// Protected Route Component
+// Protected Route Component...
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useAuth();
 

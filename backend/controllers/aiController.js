@@ -10,7 +10,7 @@ const generateCapsule = async (req, res) => {
   try {
     console.log('🔮 AI Capsule generation requested by user:', req.user.email);
 
-    // Fetch all memories for the authenticated user
+    // Fetch all memories for the authenticated user...
     const memories = await Memory.find({ user: req.user._id })
       .sort({ date: -1 })
       .lean();

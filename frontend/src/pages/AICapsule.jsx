@@ -19,7 +19,7 @@ const AICapsule = () => {
       const { data } = await generateAICapsule();
       console.log('✅ Capsule generated:', data);
       setCapsule(data);
-      setActiveTab('summary'); // Set first tab active
+      setActiveTab('summary'); // Set first tab active...
     } catch (error) {
       console.error('❌ Error generating capsule:', error);
       setError(error.response?.data?.message || 'Failed to generate AI capsule');
